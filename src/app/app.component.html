@@ -8,48 +8,127 @@
     <ul class="list-unstyled components">
       <li>
         <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-          <i class="fas fa-home"></i>
+          <i class="fas fa-users"></i>&nbsp;&nbsp;
           Leads
         </a>
         <ul class="collapse list-unstyled" id="homeSubmenu">
           <li>
-            <a routerLink="/leads" href="#">Leads</a>
+            <a routerLink="/addLead">
+              <i class="fas fa-plus-square"></i> &nbsp;&nbsp;
+              New</a>
           </li>
           <li>
-            <a href="#">Home 2</a>
-          </li>
-          <li>
-            <a href="#">Home 3</a>
+            <a routerLink="/leads">
+              <i class="fas fa-list-alt"></i> &nbsp;&nbsp;
+              View / Edit</a>
           </li>
         </ul>
       </li>
       <li>
         <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-          <i class="fas fa-copy"></i>
-          Admin
+          <i class="fas fa-address-card"></i>&nbsp;&nbsp;
+          Contacts
         </a>
         <ul class="collapse list-unstyled" id="pageSubmenu">
           <li>
-            <a href="#">User Manager</a>
+            <a href="#">
+              <i class="fas fa-plus-square"></i> &nbsp;&nbsp;
+              Add</a>
           </li>
           <li>
-            <a href="#">Data Export</a>
-          </li>
-          <li>
-            <a href="#">Assign User</a>
+            <a routerLink="" href="#">
+              <i class="fas fa-list-alt"></i> &nbsp;&nbsp;
+              View / Modify</a>
           </li>
         </ul>
-        <a href="#">
-          <i class="fas fa-briefcase"></i>
+
+        <a href="#salesSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+          <i class="fas fa-money-check-alt"></i>&nbsp;&nbsp;
+          Sales
+        </a>
+        <ul class="collapse list-unstyled" id="salesSubmenu">
+          <li>
+            <a href="#">
+              <i class="fas fa-plus-square"></i> &nbsp;&nbsp;
+              New Deal</a>
+          </li>
+          <li>
+            <a routerLink="" href="#">
+              <i class="fas fa-list-alt"></i> &nbsp;&nbsp;
+              View / Modify</a>
+          </li>
+        </ul>
+
+        <a href="#callsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+          <i class="fas fa-phone"></i>&nbsp;&nbsp;
+          Calls
+        </a>
+        <ul class="collapse list-unstyled" id="callsSubmenu">
+          <li>
+            <a href="#">
+              <i class="fas fa-plus-square"></i> &nbsp;&nbsp;
+              Call Entry</a>
+          </li>
+          <li>
+            <a routerLink="" href="#">
+              <i class="fas fa-list-alt"></i> &nbsp;&nbsp;
+              View / Modify</a>
+          </li>
+        </ul>
+
+
+
+        <a href="#usersSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+          <i class="fas fa-user"></i>&nbsp;&nbsp;
+          Users
+        </a>
+        <ul class="collapse list-unstyled" id="usersSubmenu">
+          <li>
+            <a href="#">
+              <i class="fas fa-user-plus"></i> &nbsp;&nbsp;
+              New User</a>
+          </li>
+          <li>
+            <a routerLink="" href="#">
+              <i class="fas fa-list-alt"></i> &nbsp;&nbsp;
+              View / Modify</a>
+          </li>
+        </ul>
+
+        <a href="#SettingsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+          <i class="fas fa-cog"></i>&nbsp;&nbsp;
           Settings
         </a>
-      </li>
+        <ul class="collapse list-unstyled" id="SettingsSubmenu">
+          <li>
+            <a href="#">
+              <i class="fas fa-plus"></i> &nbsp;&nbsp;
+              Services Offered</a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-plus"></i> &nbsp;&nbsp;
+              Payment Types</a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-plus"></i> &nbsp;&nbsp;
+              Change Password</a>
+          </li>
 
+        </ul>
+
+
+      </li>
       <li>
         <a href="#">
-          <i class="fas fa-paper-plane"></i>
-          Contact
-        </a>
+          <i class="fas fa-bell"></i> &nbsp;&nbsp;
+          Alerts</a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fas fa-sign-out-alt"></i> &nbsp;&nbsp;
+          Logout</a>
       </li>
     </ul>
   </nav>
@@ -63,7 +142,7 @@
           <i class="fas fa-align-left"></i>
         </button>
       </div>
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand" href="#"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -75,3 +154,4 @@
       </router-outlet>
     </div>
   </div>
+</div>
