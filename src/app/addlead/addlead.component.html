@@ -1,68 +1,120 @@
-<div class="row">
-        <div class="card bg-light">
-                <article class="card-body mx-auto" style="max-width: 400px;">
-                    <h4 class="card-title mt-3 text-center">Create Account</h4>
-                    <p class="text-center">Get started with your free account</p>
-                    <p>
-                        <a href="" class="btn btn-block btn-twitter"> <i class="fab fa-twitter"></i>   Login via Twitter</a>
-                        <a href="" class="btn btn-block btn-facebook"> <i class="fab fa-facebook-f"></i>   Login via facebook</a>
-                    </p>
-                    <p class="divider-text">
-                        <span class="bg-light">OR</span>
-                    </p>
-                    <form>
-                    <div class="form-group input-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text"> <i class="fa fa-user"></i> </span>
-                         </div>
-                        <input name="" class="form-control" placeholder="Full name" type="text">
-                    </div> <!-- form-group// -->
+<div class="content" style="padding-left:3%;padding-right:3%;">   
+    <div class="card text-center">
+        <div class="card-header">      
+            <h5> <i class="fa fa-plus-square"></i> New Customer</h5>
+        </div>
+        <div class="card-body"  style="padding-left:30%;padding-right:30%;">
+          <form autocomplete="off">
+            <div class="row"> 
+                <div class="col-sm-6">
                     <div class="form-group input-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
                          </div>
-                        <input name="" class="form-control" placeholder="Email address" type="email">
-                    </div> <!-- form-group// -->
+                        <input name="firstname" [(ngModel)]="firstname" required class="form-control" placeholder="First Name" type="email">
+                    </div> 
+                </div>
+                <div class="col-sm-6">
                     <div class="form-group input-group">
                         <div class="input-group-prepend">
-                            <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
-                        </div>
-                        <select class="custom-select" style="max-width: 120px;">
-                            <option selected="">+971</option>
-                            <option value="1">+972</option>
-                            <option value="2">+198</option>
-                            <option value="3">+701</option>
-                        </select>
-                        <input name="" class="form-control" placeholder="Phone number" type="text">
-                    </div> <!-- form-group// -->
+                            <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+                         </div>
+                        <input name="lastname" [(ngModel)]="lastname" required class="form-control" placeholder="Last Name" type="email">
+                    </div> 
+                </div>
+            </div>
+           <div class="row">
+                <div class="col-sm-12">
                     <div class="form-group input-group">
                         <div class="input-group-prepend">
-                            <span class="input-group-text"> <i class="fa fa-building"></i> </span>
-                        </div>
-                        <select class="form-control">
-                            <option selected=""> Select job type</option>
-                            <option>Designer</option>
-                            <option>Manager</option>
-                            <option>Accaunting</option>
-                        </select>
-                    </div> <!-- form-group end.// -->
+                            <span class="input-group-text"> <i class="fa fa-user-secret"></i> </span>
+                         </div>
+                         <select name="customerStage" [(ngModel)]="customerStage" class="form-control">                 
+                            <option value="LEAD" selected="selected">LEAD</option>
+                            <option value="CONTACT">CONTACT</option>                        
+                            <option value="ACCOUNT">ACCOUNT</option>                        
+                            <option value="DRAFT">DRAFT</option>                        
+                          </select>
+                    </div> 
+                </div>          
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
                     <div class="form-group input-group">
                         <div class="input-group-prepend">
-                            <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
-                        </div>
-                        <input class="form-control" placeholder="Create password" type="password">
-                    </div> <!-- form-group// -->
+                            <span class="input-group-text"> <i class="fa fa-user-secret"></i> </span>
+                         </div>
+                         <select name="assignedTo" [(ngModel)]="assignedTo" class="form-control">                 
+                            <option value="1001" selected="selected">chanky.mallick@gmail.com</option>
+                            <option value="1002">mallick@erwin.com</option>                        
+                          </select>
+                    </div> 
+                </div>                          
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
                     <div class="form-group input-group">
                         <div class="input-group-prepend">
-                            <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
-                        </div>
-                        <input class="form-control" placeholder="Repeat password" type="password">
-                    </div> <!-- form-group// -->                                      
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-primary btn-block"> Create Account  </button>
-                    </div> <!-- form-group// -->      
-                    <p class="text-center">Have an account? <a href="">Log In</a> </p>                                                                 
-                </form>
-                </article>
-                </div> 
-</div>
+                            <span class="input-group-text"> <i class="fa fa-user-secret"></i> </span>
+                         </div>
+                         <select name="country" [(ngModel)]="country" class="form-control">                 
+                            <option value="SINGAPORE" selected="selected">SINGAPORE</option>
+                            <option value="HONKONG">HONKONG</option>                        
+                          </select>
+                    </div> 
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"> <i class="fa fa-user-secret"></i> </span>
+                         </div>
+                         <select name="currency" [(ngModel)]="currency" class="form-control">                 
+                            <option value="USD" selected="selected">USD</option>
+                            <option value="SGD">SGD</option>                        
+                          </select>
+                    </div> 
+                </div>
+            </div>     
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"> <i class="fa fa-user-secret"></i> </span>
+                         </div>
+                         <select name="revenuePotential" [(ngModel)]="revenuePotential" class="form-control">                 
+                            <option value="1" selected="selected">*</option>
+                            <option value="2">**</option>                        
+                            <option value="3">***</option>                        
+                            <option value="4">****</option>                        
+                            <option value="5">*****</option>                        
+                          </select>
+                    </div> 
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"> <i class="fa fa-user-secret"></i> </span>
+                         </div>
+                         <select name="serviceInterested" [(ngModel)]="serviceInterested" class="form-control">                 
+                            <option value="FOREX" selected="selected">FOREX</option>
+                            <option value="STOCK">STOCK</option>                        
+                          </select>
+                    </div> 
+                </div>
+            </div> 
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"> <i class="fa fa-sticky-note"></i> </span>
+                         </div>
+                         <textarea class="form-control"  name="description" [(ngModel)]="description"  placeholder="Description(Optional)"  rows="2"></textarea>
+                    </div> 
+                </div>          
+            </div>           
+          </form>
+    
+        </div>         
+      </div>    
+    </div>
+    
