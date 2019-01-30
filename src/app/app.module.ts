@@ -6,10 +6,14 @@ import { AppComponent } from './app.component';
 import { RouterModule, Routes } from '@angular/router';
 import { LeadsComponent } from './leads/leads.component';
 import { AddleadComponent } from './addlead/addlead.component';
+import { NewuserComponent } from './newuser/newuser.component';
+import { FormsModule } from '@angular/forms';
+import { Utility } from './Utility';
 
 const appRoutes: Routes = [
   { path: 'leads', component: LeadsComponent },
-  { path: 'addLead', component: AddleadComponent }
+  { path: 'addLead', component: AddleadComponent },
+  { path: 'addUser', component: NewuserComponent },
 ]
 
 
@@ -17,7 +21,8 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     LeadsComponent,
-    AddleadComponent
+    AddleadComponent,
+    NewuserComponent 
   ],  
   imports: [
     RouterModule.forRoot(
@@ -25,7 +30,10 @@ const appRoutes: Routes = [
       { enableTracing: false }),
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
+    
+  
   ],
   providers: [],
   bootstrap: [AppComponent]

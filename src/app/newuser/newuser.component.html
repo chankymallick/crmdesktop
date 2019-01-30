@@ -1,0 +1,100 @@
+<div class="content" style="padding-left:3%;padding-right:3%;">   
+<div class="card text-center">
+    <div class="card-header">      
+        <h5> <i class="fa fa-plus-square"></i> New User</h5>
+    </div>
+    <div class="card-body"  style="padding-left:30%;padding-right:30%;">
+      <form autocomplete="off">
+        <div class="row"> 
+            <div class="col-sm-12">
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+                     </div>
+                    <input name="email" [(ngModel)]="email" required class="form-control" placeholder="Email" type="email">
+                </div> 
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                     </div>
+                    <input name="name" [(ngModel)]="name" class="form-control"  required placeholder="Full Name" type="text">
+                </div> 
+            </div>          
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-globe"></i> </span>
+                     </div>
+                    <input name="mobilePrefix"  readonly [(ngModel)]="mobilePrefix" class="form-control" >
+                </div> 
+            </div>   
+            <div class="col-sm-9">
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
+                     </div>
+                    <input name="mobileNo" [(ngModel)]="mobileNo" class="form-control" placeholder="Mobile"  type="tel">
+                </div> 
+            </div>         
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-unlock-alt"></i> </span>
+                     </div>
+                    <input name="password" [(ngModel)]="password" class="form-control" placeholder="Password"   type="password">
+                </div> 
+            </div>   
+            <div class="col-sm-6">
+                <div class="form-group input-group">                   
+                    <input name="password2" [(ngModel)]="password2" class="form-control" placeholder="Confirm password" type="password">
+                </div> 
+            </div> 
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-user-secret"></i> </span>
+                     </div>
+                     <select name="userRole" [(ngModel)]="userRole" class="form-control">                 
+                        <option value="LIMITED" selected="selected">Limited User</option>
+                        <option value="ADMIN">Administrator</option>                        
+                      </select>
+                </div> 
+            </div>          
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-sticky-note"></i> </span>
+                     </div>
+                     <textarea class="form-control"  name="description" [(ngModel)]="description"  placeholder="Description(Optional)"  rows="2"></textarea>
+                </div> 
+            </div>          
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group">           
+                     <input class="btn btn-primary btn-block" (click)="saveUser()" type="submit" value="Save">
+                </div> 
+            </div>   
+            <div class="col-sm-6">
+                <div class="form-group">                                     
+                    <input  class="btn btn-warning btn-block"  type="submit" value="Save & Add New">
+                </div> 
+            </div> 
+        </div>
+      </form>
+
+    </div>         
+  </div>    
+</div>
