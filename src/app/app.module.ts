@@ -9,11 +9,13 @@ import { AddleadComponent } from './addlead/addlead.component';
 import { NewuserComponent } from './newuser/newuser.component';
 import { FormsModule } from '@angular/forms';
 import { Utility } from './Utility';
+import { CallsComponent } from './calls/calls.component';
 
 const appRoutes: Routes = [
   { path: 'leads', component: LeadsComponent },
   { path: 'addLead', component: AddleadComponent },
   { path: 'addUser', component: NewuserComponent },
+  { path: 'addCalls', component: CallsComponent }
 ]
 
 
@@ -22,7 +24,8 @@ const appRoutes: Routes = [
     AppComponent,
     LeadsComponent,
     AddleadComponent,
-    NewuserComponent 
+    NewuserComponent,
+    CallsComponent 
   ],  
   imports: [
     RouterModule.forRoot(
